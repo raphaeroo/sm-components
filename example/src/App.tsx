@@ -1,18 +1,12 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import SmComponents from 'sm-components';
+import { StyleSheet, View } from 'react-native';
+import { Text } from 'sm-components';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    SmComponents.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text textKey="Olá Mundo" />
     </View>
   );
 }
