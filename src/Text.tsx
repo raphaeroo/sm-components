@@ -3,6 +3,9 @@ import { Text as RNText } from 'react-native';
 
 interface TextProps {
   textKey: string;
+  color?: 'red' | 'blue';
 }
 
-export const Text = ({ textKey }: TextProps) => <RNText>{textKey}</RNText>;
+export const Text = ({ textKey, color }: TextProps) => (
+  <RNText style={{ color }}>{textKey}</RNText>
+);

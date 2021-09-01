@@ -6,7 +6,7 @@ import { Text } from 'sm-components';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text textKey="Olá Mundo" />
+      <Text textKey="Olá Mundo" color="blue" />
     </View>
   );
 }
@@ -16,10 +16,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
   },
 });
